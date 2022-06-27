@@ -11,7 +11,7 @@ export default function SideBar() {
             <div className="nalika-profile">
                 <div className="profile-dtl">
                     <a href="/"><img src="img/notification/4.jpg" alt="" /></a>
-                    <h2>gencho <span className="min-dtn">Das</span></h2>
+                    <h2>gencho <span className="min-dtn">Dashboard</span></h2>
                 </div>
                 <div className="profile-social-dtl">
                     <ul className="dtl-social">
@@ -25,7 +25,7 @@ export default function SideBar() {
                 <nav className="sidebar-nav left-sidebar-menu-pro">
                     <ul className="metismenu" id="menu1">
                         <li className="active">
-                            <a href="index.html">
+                            <a href="/">
                                    <i className="icon nalika-home icon-wrap"></i>
                                    <span className="mini-click-non">Home</span>
                                 </a>
@@ -43,6 +43,14 @@ export default function SideBar() {
                             <a href="/" ><i className="icon nalika-mail icon-wrap"></i> <span className="mini-click-non">Profile</span></a>
 
                         </li> 
+                        <li>
+                            <a href="/activities" ><i className="icon nalika-mail icon-wrap"></i> <span className="mini-click-non">Activities</span></a>
+
+                        </li>
+                        <li>
+                            <a href="/exercises" ><i className="icon nalika-mail icon-wrap"></i> <span className="mini-click-non">Exercises</span></a>
+
+                        </li>
                         <li>
                             <a href="/" ><i className="icon nalika-mail icon-wrap"></i> <span className="mini-click-non">News</span></a>
 

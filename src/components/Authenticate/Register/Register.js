@@ -1,6 +1,27 @@
+import { register } from "../../../services/registerService"
 
 
-export const Register = () => {
+export const Register = (onRegister) => {
+
+
+    const onRegisterHandler = (e) => {
+
+        e.preventDefault()
+        const formData = new FormData(e.currentTarget)
+
+        const email = formData.get('email')
+        const password = formData.get('password')
+        const repass = formData.get('password')
+
+        if (password !== repass) {
+            alert('passwords do not match')
+        }
+        register(email, password).then(res => {
+            console.log(res);
+        })
+        
+    }
+
     
     return (
 
@@ -25,31 +46,21 @@ export const Register = () => {
                 </div>
                 <div class="hpanel">
                     <div class="panel-body">
-                        <form action="#" id="loginForm">
+                        <form onClick={onRegisterHandler} id="loginForm">
                             <div class="row">
                                 <div class="form-group col-lg-12">
-                                    <label>Username</label>
-                                    <input class="form-control"/>
+                                    <label>Email</label>
+                                    <input name="email" type='email' class="form-control"/>
                                 </div>
                                 <div class="form-group col-lg-6">
                                     <label>Password</label>
-                                    <input type="password" class="form-control"/>
+                                    <input name="password" type="password" class="form-control"/>
                                 </div>
                                 <div class="form-group col-lg-6">
                                     <label>Repeat Password</label>
-                                    <input type="password" class="form-control"/>
+                                    <input name="repass" type="password" class="form-control"/>
                                 </div>
-                                <div class="form-group col-lg-6">
-                                    <label>Email Address</label>
-                                    <input class="form-control"/>
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <label>Repeat Email Address</label>
-                                    <input class="form-control"/>
-                                </div>
-                                <div class="checkbox col-lg-12">
-                                    <input type="checkbox" class="i-checks" checked/> Sigh up for our newsletter
-                                </div>
+
                             </div>
                             <div class="text-center">
                                 <button class="btn btn-success loginbtn">Register</button>
