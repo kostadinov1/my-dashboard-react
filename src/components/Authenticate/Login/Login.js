@@ -13,7 +13,7 @@ export const Login = (onLogin) => {
         const password = formData.get('password')
 
         login(email, password).then((loginData) => {
-            console.log(loginData.username)
+            console.log(loginData)
             console.log('loggedIn')
         })
 
