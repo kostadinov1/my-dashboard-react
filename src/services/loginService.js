@@ -9,7 +9,13 @@ export const login = async (email, password) => {
         body: JSON.stringify({username: email, password})
 
         })
-    const log = await response.json()
-    
-    return log
+
+    const log = await response.json();   
+
+    if (response.ok) {
+        return log;
+    } else {
+        throw log.non_field_errors;
+
+    }
 }

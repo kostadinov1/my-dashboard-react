@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom"
 import { register } from "../../../services/registerService"
 
 
-export const Register = (onRegister) => {
+export const Register = () => {
 
 
     const onRegisterHandler = (e) => {
@@ -31,7 +32,7 @@ export const Register = (onRegister) => {
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="back-link back-backend">
-                    <a href="index.html" class="btn btn-primary">Back to Dashboard</a>
+                    <Link to="index.html" class="btn btn-primary">Back to Dashboard</Link>
                 </div>
             </div>
         </div>
@@ -74,7 +75,7 @@ export const Register = (onRegister) => {
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <p>Copyright © 2018 <a href="https://colorlib.com/wp/templates/">Colorlib</a> All rights reserved.</p>
+                <p>Copyright © 2018 <Link to="https://colorlib.com/wp/templates/">Colorlib</Link> All rights reserved.</p>
             </div>
         </div>
     </div>

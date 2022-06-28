@@ -1,8 +1,12 @@
-import { Navigate } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../../contexts/AuthContext";
 import { login } from "../../../services/loginService";
 
-export const Login = (onLogin) => {
+export const Login = () => {
+    const { onLogin } = useContext(AuthContext)
 
+    const navigate = useNavigate()
 
     const onLoginHandler = (e) => {
         e.preventDefault();
@@ -15,10 +19,16 @@ export const Login = (onLogin) => {
         login(email, password).then((loginData) => {
             console.log(loginData)
             console.log('loggedIn')
+            onLogin(loginData.token)
+            navigate('/')
+
+            }).catch((err) => {
+                // TODO show notification
+                console.log(err)
+            
+        // onLogin(email)
         })
 
-        // onLogin(email)
-        // Navigate('/')
 
     }
 
@@ -30,7 +40,7 @@ export const Login = (onLogin) => {
         <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="back-link back-backend">
-                    <a href="index.html" className="btn btn-primary">Back to Dashboard</a>
+                    <Link to="index.html" className="btn btn-primary">Back to Dashboard</Link>
                 </div>
             </div>
         </div>
@@ -63,7 +73,7 @@ export const Login = (onLogin) => {
                                 <p className="help-block small">(if this is a private computer)</p>
                             </div>
                             <button  className="btn btn-success btn-block loginbtn">Login</button>
-                            <a className="btn btn-default btn-block" href="/register">Register</a>
+                            <Link className="btn btn-default btn-block" to="/register">Register</Link>
                         </form>
                     </div>
                 </div>
@@ -72,7 +82,7 @@ export const Login = (onLogin) => {
         </div>
         <div className="row">
             <div className="col-md-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                <p>Copyright © 2018 <a href="https://colorlib.com/wp/templates/">Colorlib</a> All rights reserved.</p>
+                <p>Copyright © 2018 <Link to="https://colorlib.com/wp/templates/">Colorlib</Link> All rights reserved.</p>
             </div>
         </div>
     </div>
