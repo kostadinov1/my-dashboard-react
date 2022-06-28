@@ -10,7 +10,6 @@ import Home from './components/Home/Home';
 import SideBar from './components/SideBar/SideBar';
 import { StravaDashboard } from './components/StravaDashboard/StravaDashboard';
 import { useState } from 'react';
-import { login } from './services/loginService';
 
 function App() {
 

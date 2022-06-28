@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 export default function Header() {
@@ -7,7 +8,7 @@ export default function Header() {
                 <div className="row">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="logo-pro">
-                            <a href="index.html"><img className="main-logo" src="img/logo/logo.png" alt="" /></a>
+                            <Link to="index.html"><img className="main-logo" src="img/logo/logo.png" alt="" /></Link>
                         </div>
                     </div>
                 </div>
@@ -31,7 +32,7 @@ export default function Header() {
                                                 <div className="breadcome-heading">
                                                     <form role="search" className="">
                                                         <input type="text" placeholder="Search..." className="form-control"/>
-                                                        <a href="/"><i className="fa fa-search"></i></a>
+                                                        <Link to="/"><i className="fa fa-search"></i></Link>
                                                     </form>
                                                 </div>
                                             </div>
@@ -40,14 +41,14 @@ export default function Header() {
                                             <div className="header-right-info">
                                                 <ul className="nav navbar-nav mai-top-nav header-right-menu">
                                                     <li className="nav-item dropdown">
-                                                        <a href="/" data-toggle="dropdown" role="button"  className="nav-link dropdown-toggle"><i className="icon nalika-mail nalika-chat-pro" aria-hidden="true"></i><span className="indicator-ms"></span></a>
+                                                        <Link to="/" data-toggle="dropdown" role="button"  className="nav-link dropdown-toggle"><i className="fa fa-comments nalika-chat-pro" aria-hidden="true"></i><span className="indicator-ms"></span></Link>
                                                         <div role="menu" className="author-message-top dropdown-menu animated zoomIn">
                                                             <div className="message-single-top">
                                                                 <h1>Message</h1>
                                                             </div>
                                                             <ul className="message-menu">
                                                                 <li>
-                                                                    <a href="/">
+                                                                    <Link to="/">
                                                                         <div className="message-img">
                                                                             <img src="img/contact/1.jpg" alt=""/>
                                                                         </div>
@@ -56,10 +57,10 @@ export default function Header() {
                                                                             <h2>Advanda Cro</h2>
                                                                             <p>Please done this project as soon possible.</p>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/">
+                                                                    <Link to="/">
                                                                         <div className="message-img">
                                                                             <img src="img/contact/4.jpg" alt=""/>
                                                                         </div>
@@ -68,10 +69,10 @@ export default function Header() {
                                                                             <h2>Sulaiman din</h2>
                                                                             <p>Please done this project as soon possible.</p>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/">
+                                                                    <Link to="/">
                                                                         <div className="message-img">
                                                                             <img src="img/contact/3.jpg" alt=""/>
                                                                         </div>
@@ -80,10 +81,10 @@ export default function Header() {
                                                                             <h2>Victor Jara</h2>
                                                                             <p>Please done this project as soon possible.</p>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/">
+                                                                    <Link to="/">
                                                                         <div className="message-img">
                                                                             <img src="img/contact/2.jpg" alt=""/>
                                                                         </div>
@@ -92,22 +93,22 @@ export default function Header() {
                                                                             <h2>Victor Jara</h2>
                                                                             <p>Please done this project as soon possible.</p>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                             </ul>
                                                             <div className="message-view">
-                                                                <a href="/">View All Messages</a>
+                                                                <Link to="/">View All Messages</Link>
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li className="nav-item"><a href="/" data-toggle="dropdown" role="button"  className="nav-link dropdown-toggle"><i className="icon nalika-alarm" aria-hidden="true"></i><span className="indicator-nt"></span></a>
+                                                    <li className="nav-item"><Link to="/" data-toggle="dropdown" role="button"  className="nav-link dropdown-toggle"><i className="fa fa-bell" aria-hidden="true"></i><span className="indicator-nt"></span></Link>
                                                         <div role="menu" className="notification-author dropdown-menu animated zoomIn">
                                                             <div className="notification-single-top">
                                                                 <h1>Notifications</h1>
                                                             </div>
                                                             <ul className="notification-menu">
                                                                 <li>
-                                                                    <a href="/">
+                                                                    <Link to="/">
                                                                         <div className="notification-icon">
                                                                             <i className="icon nalika-tick" aria-hidden="true"></i>
                                                                         </div>
@@ -116,10 +117,10 @@ export default function Header() {
                                                                             <h2>Advanda Cro</h2>
                                                                             <p>Please done this project as soon possible.</p>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/">
+                                                                    <Link to="/">
                                                                         <div className="notification-icon">
                                                                             <i className="icon nalika-cloud" aria-hidden="true"></i>
                                                                         </div>
@@ -128,10 +129,10 @@ export default function Header() {
                                                                             <h2>Sulaiman din</h2>
                                                                             <p>Please done this project as soon possible.</p>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/">
+                                                                    <Link to="/">
                                                                         <div className="notification-icon">
                                                                             <i className="icon nalika-folder" aria-hidden="true"></i>
                                                                         </div>
@@ -140,10 +141,10 @@ export default function Header() {
                                                                             <h2>Victor Jara</h2>
                                                                             <p>Please done this project as soon possible.</p>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/">
+                                                                    <Link to="/">
                                                                         <div className="notification-icon">
                                                                             <i className="icon nalika-bar-chart" aria-hidden="true"></i>
                                                                         </div>
@@ -152,42 +153,42 @@ export default function Header() {
                                                                             <h2>Victor Jara</h2>
                                                                             <p>Please done this project as soon possible.</p>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                             </ul>
                                                             <div className="notification-view">
-                                                                <a href="/">View All Notification</a>
+                                                                <Link to="/">View All Notification</Link>
                                                             </div>
                                                         </div>
                                                     </li>
                                                     <li className="nav-item">
-                                                        <a href="/" data-toggle="dropdown" role="button"  className="nav-link dropdown-toggle">
-                                                                <i className="icon nalika-user nalika-user-rounded header-riht-inf" aria-hidden="true"></i>
+                                                        <Link to="/" data-toggle="dropdown" role="button"  className="nav-link dropdown-toggle">
+                                                                <i className="fa fa-user" aria-hidden="true"></i>
                                                                 <span className="admin-name">Advanda Cro</span>
                                                                 <i className="icon nalika-down-arrow nalika-angle-dw nalika-icon"></i>
-                                                            </a>
+                                                            </Link>
                                                         <ul role="menu" className="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                            <li><a href="register.html"><span className="icon nalika-home author-log-ic"></span> Register</a>
+                                                            <li><Link to="register.html"><span className="icon nalika-home author-log-ic"></span> Register</Link>
                                                             </li>
-                                                            <li><a href="/"><span className="icon nalika-user author-log-ic"></span> My Profile</a>
+                                                            <li><Link to="/"><span className="icon nalika-user author-log-ic"></span> My Profile</Link>
                                                             </li>
-                                                            <li><a href="lock.html"><span className="icon nalika-diamond author-log-ic"></span> Lock</a>
+                                                            <li><Link to="lock.html"><span className="icon nalika-diamond author-log-ic"></span> Lock</Link>
                                                             </li>
-                                                            <li><a href="/"><span className="icon nalika-settings author-log-ic"></span> Settings</a>
+                                                            <li><Link to="/"><span className="icon nalika-settings author-log-ic"></span> Settings</Link>
                                                             </li>
-                                                            <li><a href="login.html"><span className="icon nalika-unlocked author-log-ic"></span> Log Out</a>
+                                                            <li><Link to="login.html"><span className="icon nalika-unlocked author-log-ic"></span> Log Out</Link>
                                                             </li>
                                                         </ul>
                                                     </li>
-                                                    <li className="nav-item nav-setting-open"><a href="/" data-toggle="dropdown" role="button"  className="nav-link dropdown-toggle"><i className="icon nalika-menu-task"></i></a>
+                                                    <li className="nav-item nav-setting-open"><Link to="/" data-toggle="dropdown" role="button"  className="nav-link dropdown-toggle"><i className="icon nalika-menu-task"></i></Link>
     
                                                         <div role="menu" className="admintab-wrap menu-setting-wrap menu-setting-wrap-bg dropdown-menu animated zoomIn">
                                                             <ul className="nav nav-tabs custon-set-tab">
-                                                                <li className="active"><a data-toggle="tab" href="#Notes">News</a>
+                                                                <li className="active"><Link data-toggle="tab" to="#Notes">News</Link>
                                                                 </li>
-                                                                <li><a data-toggle="tab" href="#Projects">Activity</a>
+                                                                <li><Link data-toggle="tab" to="#Projects">Activity</Link>
                                                                 </li>
-                                                                <li><a data-toggle="tab" href="#Settings">Settings</a>
+                                                                <li><Link data-toggle="tab" to="#Settings">Settings</Link>
                                                                 </li>
                                                             </ul>
     
@@ -201,7 +202,7 @@ export default function Header() {
                                                                         <div className="notes-list-area notes-menu-scrollbar">
                                                                             <ul className="notes-menu-list">
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="notes-list-flow">
                                                                                             <div className="notes-img">
                                                                                                 <img src="img/contact/4.jpg" alt="" />
@@ -211,10 +212,10 @@ export default function Header() {
                                                                                                 <span>Yesterday 2:45 pm</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="notes-list-flow">
                                                                                             <div className="notes-img">
                                                                                                 <img src="img/contact/1.jpg" alt="" />
@@ -224,10 +225,10 @@ export default function Header() {
                                                                                                 <span>Yesterday 2:45 pm</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="notes-list-flow">
                                                                                             <div className="notes-img">
                                                                                                 <img src="img/contact/2.jpg" alt="" />
@@ -237,10 +238,10 @@ export default function Header() {
                                                                                                 <span>Yesterday 2:45 pm</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="notes-list-flow">
                                                                                             <div className="notes-img">
                                                                                                 <img src="img/contact/3.jpg" alt="" />
@@ -250,10 +251,10 @@ export default function Header() {
                                                                                                 <span>Yesterday 2:45 pm</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="notes-list-flow">
                                                                                             <div className="notes-img">
                                                                                                 <img src="img/contact/4.jpg" alt="" />
@@ -263,10 +264,10 @@ export default function Header() {
                                                                                                 <span>Yesterday 2:45 pm</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="notes-list-flow">
                                                                                             <div className="notes-img">
                                                                                                 <img src="img/contact/1.jpg" alt="" />
@@ -276,10 +277,10 @@ export default function Header() {
                                                                                                 <span>Yesterday 2:45 pm</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="notes-list-flow">
                                                                                             <div className="notes-img">
                                                                                                 <img src="img/contact/2.jpg" alt="" />
@@ -289,10 +290,10 @@ export default function Header() {
                                                                                                 <span>Yesterday 2:45 pm</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="notes-list-flow">
                                                                                             <div className="notes-img">
                                                                                                 <img src="img/contact/1.jpg" alt="" />
@@ -302,10 +303,10 @@ export default function Header() {
                                                                                                 <span>Yesterday 2:45 pm</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="notes-list-flow">
                                                                                             <div className="notes-img">
                                                                                                 <img src="img/contact/2.jpg" alt="" />
@@ -315,10 +316,10 @@ export default function Header() {
                                                                                                 <span>Yesterday 2:45 pm</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="notes-list-flow">
                                                                                             <div className="notes-img">
                                                                                                 <img src="img/contact/3.jpg" alt="" />
@@ -328,7 +329,7 @@ export default function Header() {
                                                                                                 <span>Yesterday 2:45 pm</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
@@ -343,7 +344,7 @@ export default function Header() {
                                                                         <div className="project-st-list-area project-st-menu-scrollbar">
                                                                             <ul className="projects-st-menu-list">
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="project-list-flow">
                                                                                             <div className="projects-st-heading">
                                                                                                 <h2>New User Registered</h2>
@@ -351,10 +352,10 @@ export default function Header() {
                                                                                                 <span className="project-st-time">1 hours ago</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="project-list-flow">
                                                                                             <div className="projects-st-heading">
                                                                                                 <h2>New Order Received</h2>
@@ -362,10 +363,10 @@ export default function Header() {
                                                                                                 <span className="project-st-time">2 hours ago</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="project-list-flow">
                                                                                             <div className="projects-st-heading">
                                                                                                 <h2>New Order Received</h2>
@@ -373,10 +374,10 @@ export default function Header() {
                                                                                                 <span className="project-st-time">3 hours ago</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="project-list-flow">
                                                                                             <div className="projects-st-heading">
                                                                                                 <h2>New Order Received</h2>
@@ -384,10 +385,10 @@ export default function Header() {
                                                                                                 <span className="project-st-time">4 hours ago</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="project-list-flow">
                                                                                             <div className="projects-st-heading">
                                                                                                 <h2>New User Registered</h2>
@@ -395,10 +396,10 @@ export default function Header() {
                                                                                                 <span className="project-st-time">5 hours ago</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="project-list-flow">
                                                                                             <div className="projects-st-heading">
                                                                                                 <h2>New Order</h2>
@@ -406,10 +407,10 @@ export default function Header() {
                                                                                                 <span className="project-st-time">6 hours ago</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="project-list-flow">
                                                                                             <div className="projects-st-heading">
                                                                                                 <h2>New User</h2>
@@ -417,10 +418,10 @@ export default function Header() {
                                                                                                 <span className="project-st-time">7 hours ago</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="/">
+                                                                                    <Link to="/">
                                                                                         <div className="project-list-flow">
                                                                                             <div className="projects-st-heading">
                                                                                                 <h2>New Order</h2>
@@ -428,7 +429,7 @@ export default function Header() {
                                                                                                 <span className="project-st-time">9 hours ago</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
@@ -581,27 +582,27 @@ export default function Header() {
                                 <div className="mobile-menu">
                                     <nav id="dropdown">
                                         <ul className="mobile-menu-nav">
-                                            <li><a data-toggle="collapse" data-target="#Charts" href="/">Home <span className="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
+                                            <li><Link data-toggle="collapse" data-target="#Charts" to="/">Home <span className="admin-project-icon nalika-icon nalika-down-arrow"></span></Link>
                                                 <ul className="collapse dropdown-header-top">
-                                                    <li><a href="index.html">Dashboard v.1</a></li>
-                                                    <li><a href="index-1.html">Dashboard v.2</a></li>
-                                                    <li><a href="index-3.html">Dashboard v.3</a></li>
-                                                    <li><a href="product-list.html">Product List</a></li>
-                                                    <li><a href="product-edit.html">Product Edit</a></li>
-                                                    <li><a href="product-detail.html">Product Detail</a></li>
-                                                    <li><a href="product-cart.html">Product Cart</a></li>
-                                                    <li><a href="product-payment.html">Product Payment</a></li>
-                                                    <li><a href="analytics.html">Analytics</a></li>
-                                                    <li><a href="widgets.html">Widgets</a></li>
+                                                    <li><Link to="index.html">Dashboard v.1</Link></li>
+                                                    <li><Link to="index-1.html">Dashboard v.2</Link></li>
+                                                    <li><Link to="index-3.html">Dashboard v.3</Link></li>
+                                                    <li><Link to="product-list.html">Product List</Link></li>
+                                                    <li><Link to="product-edit.html">Product Edit</Link></li>
+                                                    <li><Link to="product-detail.html">Product Detail</Link></li>
+                                                    <li><Link to="product-cart.html">Product Cart</Link></li>
+                                                    <li><Link to="product-payment.html">Product Payment</Link></li>
+                                                    <li><Link to="analytics.html">Analytics</Link></li>
+                                                    <li><Link to="widgets.html">Widgets</Link></li>
                                                 </ul>
                                             </li>
-                                            <li><a data-toggle="collapse" data-target="#demo" href="/">Mailbox <span className="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
+                                            <li><Link data-toggle="collapse" data-target="#demo" to="/">Mailbox <span className="admin-project-icon nalika-icon nalika-down-arrow"></span></Link>
                                                 <ul id="demo" className="collapse dropdown-header-top">
-                                                    <li><a href="mailbox.html">Inbox</a>
+                                                    <li><Link to="mailbox.html">Inbox</Link>
                                                     </li>
-                                                    <li><a href="mailbox-view.html">View Mail</a>
+                                                    <li><Link to="mailbox-view.html">View Mail</Link>
                                                     </li>
-                                                    <li><a href="mailbox-compose.html">Compose Mail</a>
+                                                    <li><Link to="mailbox-compose.html">Compose Mail</Link>
                                                     </li>
                                                 </ul>
                                             </li>
