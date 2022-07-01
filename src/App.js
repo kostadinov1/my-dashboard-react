@@ -10,10 +10,13 @@ import Home from './components/Home/Home';
 import SideBar from './components/SideBar/SideBar';
 import { StravaDashboard } from './components/StravaDashboard/StravaDashboard';
 import { useState } from 'react';
+import { CreateExercise } from './components/Exercises/CreateExercise';
+import { ExerciseDetails } from './components/Exercises/ExerciseDetails';
+import { useLocalStorage } from './hooks/useLocalStorage';
 
 function App() {
 
-  const [accessToken, setAccessToken] = useState({accessToken:''})
+  const [accessToken, setAccessToken] = useLocalStorage({accessToken:''})
 
   const onLogin = (token) => {
     setAccessToken(token);
@@ -39,6 +42,10 @@ function App() {
             <Route path='/strava-dashboard/' element={<StravaDashboard />} />
             <Route path='/activities/' element={<Calendar />} />
             <Route path='/exercises/' element={<Exercises />} />
+            <Route path='/create-exercise/' element={<CreateExercise />} />
+            <Route path='/exercise-details/' element={<ExerciseDetails />} />
+
+
 
           </Routes>
           <Footer />

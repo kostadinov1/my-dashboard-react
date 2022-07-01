@@ -27,7 +27,7 @@ export const Exercises = () => {
                         <div className="product-status-wrap">
                             <h4>Exercise List</h4>
                             <div className="add-product">
-                                <Link to="product-edit.html">Add Exercise</Link>
+                                <Link to="/create-exercise">Add Exercise</Link>
                             </div>
                             <table>
                                 <tr>

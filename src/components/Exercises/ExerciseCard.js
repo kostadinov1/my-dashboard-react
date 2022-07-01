@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 export const ExerciseCard = ({exercise}) => {
@@ -11,7 +12,7 @@ export const ExerciseCard = ({exercise}) => {
         <td>{exercise.calories_burned}</td>
         <td>RPEspecific</td>
         <td>
-            <button data-toggle="tooltip" title="Edit" className="pd-setting-ed"><i className="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+            <Link to="/exercise-details/"><button  data-toggle="tooltip" title="Edit" className="pd-setting-ed"><i className="fa fa-pencil-square-o" aria-hidden="true"></i></button></Link>
             <button data-toggle="tooltip" title="Trash" className="pd-setting-ed"><i className="fa fa-trash-o" aria-hidden="true"></i></button>
         </td>
     </tr>
