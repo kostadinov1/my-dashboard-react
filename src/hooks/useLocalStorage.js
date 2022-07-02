@@ -16,7 +16,7 @@ export const useLocalStorage = (key, initialValue) => {
 
     })
 
-    // TODO: add support for funcitions arguments
+    // TODO: add support for funcition arguments
     const setItem = (value) => {
         try {
             localStorage.setItem(key, JSON.stringify(value))
@@ -24,7 +24,6 @@ export const useLocalStorage = (key, initialValue) => {
         } catch(err) {
             console.log(err)
         }
-        //save to state
     }
 
     return [state, setItem ]

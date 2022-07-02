@@ -9,14 +9,13 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import SideBar from './components/SideBar/SideBar';
 import { StravaDashboard } from './components/StravaDashboard/StravaDashboard';
-import { useState } from 'react';
 import { CreateExercise } from './components/Exercises/CreateExercise';
 import { ExerciseDetails } from './components/Exercises/ExerciseDetails';
 import { useLocalStorage } from './hooks/useLocalStorage';
 
 function App() {
 
-  const [accessToken, setAccessToken] = useLocalStorage({accessToken:''})
+  const [accessToken, setAccessToken] = useLocalStorage('userToken',{accessToken:''})
 
   const onLogin = (token) => {
     setAccessToken(token);

@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom"
-import { register } from "../../../services/registerService"
+import { Link, useNavigate } from "react-router-dom"
+import { register } from "../../../services/auth/registerService"
 
 
 export const Register = () => {
-
+    const navigate = useNavigate()
 
     const onRegisterHandler = (e) => {
 
@@ -18,7 +18,7 @@ export const Register = () => {
             alert('passwords do not match')
         }
         register(email, password).then(res => {
-            console.log(res);
+        navigate('/')
         })
         
     }

@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthContext";
-import { login } from "../../../services/loginService";
+import { login } from "../../../services/auth/loginService";
 
 export const Login = () => {
     const { onLogin } = useContext(AuthContext)
