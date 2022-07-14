@@ -12,6 +12,7 @@ import { StravaDashboard } from './components/StravaDashboard/StravaDashboard';
 import { CreateExercise } from './components/Exercises/CreateExercise';
 import { ExerciseDetails } from './components/Exercises/ExerciseDetails';
 import { useLocalStorage } from './hooks/useLocalStorage';
+import { CyclesHierarchy } from './components/Periodization/CyclesHierarchy';
 
 function App() {
 
@@ -39,10 +40,14 @@ function App() {
             <Route path='/register' element={<Register />} />
             <Route path='/calendar/' element={<Calendar />} />
             <Route path='/strava-dashboard/' element={<StravaDashboard />} />
+
             <Route path='/activities/' element={<Calendar />} />
+
             <Route path='/exercises/' element={<Exercises />} />
             <Route path='/create-exercise/' element={<CreateExercise />} />
             <Route path='/exercise-details/' element={<ExerciseDetails />} />
+            <Route path='/periodization/' element={<CyclesHierarchy />} />
+
 
 
 

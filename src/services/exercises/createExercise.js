@@ -1,11 +1,13 @@
 
 
 export const createExercise = async (exerciseData) => {
-    const url = 'http://127.0.0.1:8000/activities/create-exercise/'
+    console.log('exercise data from api call', exerciseData);
+    const url = 'http://127.0.0.1:8000/activity/create-exercise/'
     const response = await fetch(url, {
-        method: 'post',
+        method: 'POST',
         headers: {
-            token: 'token HERE'
+            'Content-Type': 'application/json',
+            // token: token
         },
         body: JSON.stringify(exerciseData)
     })

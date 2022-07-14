@@ -45,6 +45,10 @@ export default function SideBar() {
 
                         </li> 
                         <li>
+                            <Link to="/periodization" ><i className="icon nalika-mail icon-wrap"></i> <span className="mini-click-non">Periodization</span></Link>
+
+                        </li>
+                        <li>
                             <Link to="/activities" ><i className="icon nalika-mail icon-wrap"></i> <span className="mini-click-non">Activities</span></Link>
 
                         </li>
@@ -59,10 +63,12 @@ export default function SideBar() {
                         <li>
                             <Link to="/" ><i className="icon nalika-mail icon-wrap"></i> <span className="mini-click-non">ToDo's</span></Link>
 
-                        </li><li>
+                        </li>
+                        <li>
                             <Link to="/" ><i className="icon nalika-mail icon-wrap"></i> <span className="mini-click-non">Strava Dashboard</span></Link>
 
-                        </li><li>
+                        </li>
+                        <li>
                             <Link to="/calendar" ><i className="icon nalika-mail icon-wrap"></i> <span className="mini-click-non">Calendar</span></Link>
 
                         </li>

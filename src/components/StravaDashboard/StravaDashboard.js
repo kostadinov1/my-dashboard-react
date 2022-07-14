@@ -1,8 +1,17 @@
 
 
 export const StravaDashboard = () => {
+
+
+    const onStravaConnectHandler = (e) => {
+
+    }
+
     return (
         <>
+
+        
+        
          <div className="product-sales-area mg-tb-30">
             <div className="container-fluid">
                 <div className="row">
@@ -12,7 +21,7 @@ export const StravaDashboard = () => {
                                 <div className="row">
                                     <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <div className="caption pro-sl-hd">
-                                            <span className="caption-subject text-uppercase"><b>Product Sales</b></span>
+                                            <span className="caption-subject text-uppercase"><b>Monthly Progress</b></span>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
