@@ -1,7 +1,6 @@
 
 
 export const createExercise = async (exerciseData) => {
-    console.log('exercise data from api call', exerciseData);
     const url = 'http://127.0.0.1:8000/activity/create-exercise/'
     const response = await fetch(url, {
         method: 'POST',

@@ -25,10 +25,11 @@ export const CreateExercise = () => {
         const breaks = formData.get('breaks')
         const image = formData.get('image')
 
+
         const exerciseInfo = {
                             name: name,
                             description: description,
-                            image: image,
+                            // image: image,
                             cues: cues,
                             calories_burned: calories,
                             reps: reps,
@@ -43,6 +44,7 @@ export const CreateExercise = () => {
         const userToken = localStorage.userToken
         console.log(userToken, exerciseInfo)
         createExercise(exerciseInfo)
+
 
     
     }
@@ -63,7 +65,7 @@ export const CreateExercise = () => {
                                 <div id="myTabContent" className="tab-content custom-product-edit">
                                     <div className="product-tab-list tab-pane fade active in" id="description">
 
-                                         <form onSubmit={onCreate} encType="multipart/form-data">
+                                         <form onSubmit={onCreate} method="post" encType="multipart/form-data">
                                             <div className="row">
 
                                             

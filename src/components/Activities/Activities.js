@@ -28,7 +28,7 @@ export const Activities = () => {
                         <div className="product-status-wrap">
                             <h4>Exercise List</h4>
                             <div className="add-product">
-                                <Link to="/create-exercise">Add Exercise</Link>
+                                <Link to="/create-activity">Add Activity</Link>
                             </div>
                             <table>
                                 <tr>
